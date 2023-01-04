@@ -19,7 +19,7 @@ function App() {
           <div class="card text-bg-info mt-3">
               <div class="card-header">PHP kursai</div>
               <div class="card-body">
-                Čia išmoksite apie PHP
+                Čia išmoksite apie JAVA
                 <button class='btn btn-success'>Plačiau</button>
               </div>
             </div>
