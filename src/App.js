@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Product from './components/product';
 import productsData from './data/productsData';
+import Skaiciuokle from './components/skaiciuokle';
 
 function App() {
   const prekes=productsData;
@@ -39,12 +40,19 @@ products=prekes.map((product)=>{
       <h3 class="mt-5">Specialus pasiūlymas</h3>
       <div class="row mt-3">
         <div class="col-md-6">
-          <Product product={prekes[1]}></Product>
+          <Product product={prekes[1]} descriptionColor="text-red"></Product>
         </div>
         <div class="col-md-6">
           <Product product={prekes[2]}></Product>
         </div>
 
+      </div>
+      <h3 class='mt-5' >Skaičiuoklė </h3>
+      <div>
+        <div class='row'>
+          <Skaiciuokle></Skaiciuokle>
+        </div>
+       
       </div>
       <h3 class="mt-5">Visos prekės</h3>
       <div class="row mt-3">
