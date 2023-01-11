@@ -13,7 +13,7 @@ function App() {
   for (let i=0; i<prekes.length; i++){
     products.push(
       <div class="col-md-4">
-        <Product product={prekes[i]}></Product>
+        <Product key={prekes[i].title} product={prekes[i]}></Product>
       </div>
     );
   }
@@ -35,6 +35,7 @@ products=prekes.map((product)=>{
   </div>)
 });
 */
+
   return (
     <div class="container">
       <h3 class="mt-5">Specialus pasiūlymas</h3>
