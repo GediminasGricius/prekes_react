@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Product from './components/product';
 import productsData from './data/productsData';
 import Skaiciuokle from './components/skaiciuokle';
+import Krepselis from "./components/krepselis/krepselis";
 
 function App() {
   const prekes=productsData;
@@ -35,7 +36,7 @@ products=prekes.map((product)=>{
   </div>)
 });
 */
-
+/*
   return (
     <div class="container">
       <h3 class="mt-5">Specialus pasiūlymas</h3>
@@ -64,6 +65,13 @@ products=prekes.map((product)=>{
     </div> 
      
   );
+
+ */
+    return (
+        <div className="container">
+          <Krepselis></Krepselis>
+        </div>
+    )
 }
 
 export default App;
