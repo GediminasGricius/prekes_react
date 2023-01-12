@@ -3,6 +3,11 @@
 const PrekeItem=(props)=>{
 
 
+
+    const onIstrintiClick=()=>{
+        props.onTrintiPreke(props.preke.key);
+    };
+
     return (
         <li className="list-group-item">
 
@@ -10,7 +15,7 @@ const PrekeItem=(props)=>{
                 <div className="col-md-6">{props.preke.pavadinimas}</div>
                 <div className="col-md-3">{props.preke.kiekis}</div>
                 <div className="col-md-3">
-                    <button className="btn btn-danger">Ištrinti</button>
+                    <button className="btn btn-danger" onClick={onIstrintiClick}>Ištrinti</button>
                 </div>
             </div>
         </li>

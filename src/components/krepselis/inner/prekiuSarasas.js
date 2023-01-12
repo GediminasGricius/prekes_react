@@ -5,9 +5,8 @@ const PrekiuSarasas=(props)=>{
 
     let prekiuSarasas=[];
     props.prekes.forEach((preke, index)=>{
-
         prekiuSarasas.push(
-            (<PrekeItem key={index} preke={ preke } ></PrekeItem>)
+            (<PrekeItem key={index} preke={ {...preke, key:index} } onTrintiPreke={props.onTrintiPreke} ></PrekeItem>)
         );
     })
     return (
