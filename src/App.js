@@ -8,6 +8,7 @@ import Krepselis from "./components/krepselis/krepselis";
 import Footer from "./components/footer";
 import {useState} from "react";
 import ProductsContext, {ProductContextProvider} from "./components/context/productsContext";
+import Anekdotas from "./components/anekdotas/anekdotas";
 
 function App() {
     /*
@@ -27,6 +28,7 @@ function App() {
     return (
         <div className="container">
           <ProductContextProvider>
+              <Anekdotas></Anekdotas>
               <Krepselis ></Krepselis>
               <nav className="navbar fixed-bottom bg-body-tertiary">
                     <div className="container-fluid">
